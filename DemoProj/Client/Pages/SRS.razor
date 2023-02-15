@@ -1,0 +1,103 @@
+﻿@page "/srs"
+@using DemoProj.Shared.Models
+@using DemoProj.Shared
+@inject HttpClient Http
+<b>SRS</b>
+
+<div class="input-group">
+
+
+    <div class="tblDiv">
+        <div class="tblHeader">
+            Search
+        </div>
+        <div class="tblBody">
+            <table class="tablenoborder">
+                <tr>
+                    <td>Incident Number:</td>
+                    <td><input type="text" class="form-control input-Ctrl" placeholder="Incident Number" /></td>
+                    <td>Nearest station:</td>
+                    <td>
+                       @* <input type="text" class="form-control input-Ctrl" />*@
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                [--Select Nearest station--]
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">KPHP</a></li>
+                                <li><a class="dropdown-item" href="#">AmeerPet</a></li>
+                                <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            </ul>
+                        </div>
+                        </td>
+                    <td>Status:</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                [--Select Status--]
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Open</a></li>
+                                <li><a class="dropdown-item" href="#">Closed</a></li>
+                                <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>Start Date:</td>
+                    <td><input type="date" class="form-control input-Ctrl" /></td>
+                    <td>End Date:</td>
+                    <td><input type="date" class="form-control input-Ctrl" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="tblDiv" style="margin-top:1px;">
+        <div class="tblHeader">
+            Search Results
+        </div>
+        <div class="tblBody">
+            <table class="tablenoborder" id="tblIncidents">
+                <thead>
+                    <tr>
+                        <td>Incident Number</td>
+                        <td>Incident Date</td>
+                        <td>Nearest Station</td>
+                        <td>Non-EmployeeInjuries</td>
+                        <td>Employee Injuries</td>
+                        <td>Nearest Station</td>
+                        <td>Grade Crossing</td>
+                        <td>Submitted By</td>
+                        <td>Submitted Date</td>
+                        <td>Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (incidents == null)
+                    {
+                        <tr><td>Loading..</td></tr>
+                    }
+                    else
+                    {
+                        @foreach (var incident in incidents)
+                        {
+                            <tr>
+                                <td>@incident.IncidentNumber</td>
+                                <td>@incident.IncidentDate.ToShortDateString()</td>
+                                <td>@incident.NearestStation</td>
+                                <td>@incident.NonEmployeeInjuries</td>
+                                <td>@incident.EmployeeInjuries</td>
+                                <td>@incident.DamagedEquipment</td>
+                                <td>@incident.GradeCrossing</td>
+                                <td>@incident.SubmittedBy</td>
+                                <td>@incident.SubmittedDate.ToShortDateString()</td>
+                                <td>@incident.Status</td>
+
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
