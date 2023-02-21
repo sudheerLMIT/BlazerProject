@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.33214.139
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProj.Server", "Server\DemoProj.Server.csproj", "{CE490E21-9E72-4D04-A837-44F87141AC72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProj.Server", "Server\DemoProj.Server.csproj", "{CE490E21-9E72-4D04-A837-44F87141AC72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProj.Client", "Client\DemoProj.Client.csproj", "{FEE96BB6-AAB8-4C63-91A7-8737428E9431}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProj.Client", "Client\DemoProj.Client.csproj", "{FEE96BB6-AAB8-4C63-91A7-8737428E9431}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProj.Shared", "Shared\DemoProj.Shared.csproj", "{0E43DDD7-3880-4A8C-9AAB-D4A36AAA19C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProj.Shared", "Shared\DemoProj.Shared.csproj", "{0E43DDD7-3880-4A8C-9AAB-D4A36AAA19C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

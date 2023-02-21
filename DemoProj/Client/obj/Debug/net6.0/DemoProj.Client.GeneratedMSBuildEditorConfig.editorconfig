@@ -11,45 +11,49 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = DemoProj.Client
 build_property.RootNamespace = DemoProj.Client
-build_property.ProjectDir = C:\Users\sboddapati\source\repos\DemoProj\Client\
+build_property.ProjectDir = C:\Sudheer\BlazerProject\DemoProj\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\sboddapati\source\repos\DemoProj\Client
+build_property.MSBuildProjectDirectory = C:\Sudheer\BlazerProject\DemoProj\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/App.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/Pages/Counter.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/Pages/FetchData.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/Pages/Index.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/IncidentDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5jaWRlbnREZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/Pages/SRS.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/SRS.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU1JTLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/Shared/SurveyPrompt.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/_Imports.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/Shared/MainLayout.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-cfg72hfj2e
 
-[C:/Users/sboddapati/source/repos/DemoProj/Client/Shared/NavMenu.razor]
+[C:/Sudheer/BlazerProject/DemoProj/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-u2tld2rgy6

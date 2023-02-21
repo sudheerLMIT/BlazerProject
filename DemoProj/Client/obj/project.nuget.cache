@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J3TDsm+5ntBbSljriZkusfnOlG9iYFGEGpnAnPlnbT9eyRU6OTsomgSYCd/fLNQAdGDhq3D+jiiYXqqKmNYdeQ==",
+  "dgSpecHash": "DllAmD9PHoB2PZNn3XUr0qmemSQhKbdzDlc8kC/r9IlPiF6WpXJK9H/b6WaIjM2IgnxsJaQXYWhqw5ktCmC0xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sboddapati\\source\\repos\\DemoProj\\Client\\DemoProj.Client.csproj",
+  "projectFilePath": "C:\\Sudheer\\BlazerProject\\DemoProj\\Client\\DemoProj.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sboddapati\\.nuget\\packages\\jquery\\3.6.3\\jquery.3.6.3.nupkg.sha512",
     "C:\\Users\\sboddapati\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.13\\microsoft.aspnetcore.authorization.6.0.13.nupkg.sha512",

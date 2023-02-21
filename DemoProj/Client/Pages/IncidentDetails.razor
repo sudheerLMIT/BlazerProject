@@ -1,0 +1,532 @@
+﻿@page "/incidentdetails"
+
+<h3>Incident</h3>
+<style>
+    .container div {
+        margin-bottom: 2px;
+    }
+
+    fieldset {
+        margin: 8px;
+        border: 1px solid silver;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    legend {
+        background-color: antiquewhite;
+    }
+
+    .btn-default {
+        font-family: Raleway-SemiBold;
+        font-size: 13px;
+        color: rgba(108, 88, 179, 0.75);
+        letter-spacing: 1px;
+        line-height: 15px;
+        border: 2px solid rgba(108, 89, 179, 0.75);
+        border-radius: 40px;
+        background: transparent;
+        transition: all 0.3s ease 0s;
+    }
+
+        .btn-default:hover {
+            color: #FFF;
+            background: rgba(108, 88, 179, 0.75);
+            border: 2px solid rgba(108, 89, 179, 0.75);
+        }
+
+    tbody tr {
+        border-bottom: 1px solid silver;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: black;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+        background-color:silver;
+    }
+    .nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+     color: black;
+}
+</style>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Common Incident Data</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Incident Details</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="card rounded-3">
+            <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2" style="text-align: center;border: 1px solid;background-color: antiquewhite;">
+                    Common Incident Data
+                </h3>
+
+
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Railroad:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                        <div class="col">
+                            Incident Number:
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="exampleDatepicker1" />
+                        </div>
+                    </div>
+
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Other  Railroad:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
+                        </div>
+                        <div class="col">
+                            Other  Incident Number:
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="exampleDatepicker1" />
+                        </div>
+                    </div>
+
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Other RR Track Maint:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
+                        </div>
+                        <div class="col">
+                            Other RR Track Maint. Incident Number:
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row align-items-start">
+                        <div class="col">
+                            DOT-AAR ID:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT DOT-AAR ID--]</option></select>
+
+                        </div>
+                        <div class="col">
+                            Assigned Division:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT  Assigned Division--]</option></select>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Incident Date:
+                        </div>
+                        <div class="col">
+                            <input type="date" class="form-control" />
+
+                        </div>
+                        <div class="col">
+                            Incident Time:
+                        </div>
+                        <div class="col">
+                            <input type="time" class="form-control" />
+
+                        </div>
+                        <div class="col">
+                            Nearest Station:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[-- SELECT --]</option></select>
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <fieldset>
+                                <legend>Geographic Location:</legend>
+                                <div></div>
+                                <div class="row align-items-start">
+                                    <div class="col">Location :</div>
+                                    <div class="col"> <input type="text" class="form-control" /></div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col">Address :</div>
+                                    <div class="col"> <input type="text" class="form-control" /></div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col">City :</div>
+                                    <div class="col"> <input type="text" class="form-control" /></div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col">State :</div>
+                                    <div class="col"> <select class="form-control" style="text-align:center;"><option>[-- SELECT --]</option></select></div>
+                                    <div class="col">Zip Code :</div>
+                                    <div class="col"> <input type="text" class="form-control" /></div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col">Country :</div>
+                                    <div class="col"> <select class="form-control" style="text-align:center;"><option>[-- SELECT --]</option></select></div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col">
+                            <fieldset>
+                                <legend>Involved Trains:</legend>
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                        <fieldset>
+                                            <legend style="background-color:silver;">Train Number</legend>
+                                            <div style="height:100px;">&nbsp;</div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row align-items-start">
+                                            <button class="btn btn-primary" style="width:100px;">ADD</button><br />
+                                        </div>
+                                        <div class="row align-items-start"> <button class="btn btn-primary" style="width:100px;">Delete</button></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Line:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                        <div class="col">
+                            Incident occurred on company portal:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>No</option></select>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Weather:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                        <div class="col">
+                            Is Hazardous Material Involved:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>No</option></select>
+                        </div>
+                        <div class="col">
+                            Mile Post:
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col">
+                            Type of facility:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Was any railroad employee tested for drugs:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                        <div class="col">
+                            Temperature:
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col">
+                            Visbility:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Number of positive tested for drugs:
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col">
+                            Was any railroad employee tested for alcohol:
+                        </div>
+                        <div class="col">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                        <div class="col">
+                            Number of positive tested for alcohol:
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+        <div class="tblDiv" style="margin-top:1px;">
+            <div>
+                <div class="row">
+                    <div class="col-11">
+                        <div class="tblHeader">
+                            Employee Personal Injury(98) (55A)
+                        </div>
+                        <div class="tblBody">
+                            <table class="tablenoborder" id="tblIncidents">
+                                <thead>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>Incident Number</td>
+                                        <td>Employee Number</td>
+                                        <td>Employee Name</td>
+                                        <td>Gender</td>
+                                        <td>Department</td>
+                                        <td>Person Type</td>
+                                        <td>Train Number</td>
+                                        <td>Prepared Date</td>
+                                        <td>Actions</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>2016121501</td>
+                                        <td>444730</td>
+                                        <td>Lacsina, Felipe Tn</td>
+                                        <td>Male</td>
+                                        <td>Engineer</td>
+                                        <td>Worked On Duty -Employee..</td>
+                                        <td>NJT3453</td>
+                                        <td>12/15/2016</td>
+                                        <td> <button class="btn btn-info">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>2016121501</td>
+                                        <td>19130</td>
+                                        <td>Haynes, Stuart B</td>
+                                        <td>Male</td>
+                                        <td>Human Resource</td>
+                                        <td>Worked On Duty -Employee..</td>
+                                        <td>NJT3453</td>
+                                        <td>12/15/2016</td>
+                                        <td> <button class="btn btn-info">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="btn btn-primary" style="margin-bottom:1px;margin-top:3px;">New</button> <br />
+                        <button class="btn btn-danger">Delete</button> <br />
+                        <button class="btn btn-secondary" style="margin-bottom:1px;margin-top:3px;">FRA</button> <br />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div class="row">&nbsp;</div>
+        </div>
+        <div class="tblDiv" style="margin-top:1px;">
+            <div>
+                <div class="row">
+                    <div class="col-11">
+                        <div class="tblHeader" style="background-color:pink;">
+                            Non-Employee Personal Injury(55A when Reportable)
+                        </div>
+                        <div class="tblBody">
+                            <table class="tablenoborder" id="tblIncidents">
+                                <thead>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>Incident Number</td>
+                                        <td>Employee Number</td>
+                                        <td>Employee Name</td>
+                                        <td>Gender</td>
+                                        <td>Injured Age</td>
+                                        <td>Person Type</td>
+                                        <td>Train Number</td>
+                                        <td>Prepared Date</td>
+                                        <td>Actions</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>2016121501</td>
+                                        <td>444730</td>
+                                        <td>Lacsina, Felipe Tn</td>
+                                        <td>Male</td>
+                                        <td>26</td>
+                                        <td>Worked On Duty -Employee..</td>
+                                        <td>NJT3453</td>
+                                        <td>12/15/2016</td>
+                                        <td> <button class="btn btn-info">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>2016121501</td>
+                                        <td>19130</td>
+                                        <td>Haynes, Stuart B</td>
+                                        <td>Male</td>
+                                        <td>31</td>
+                                        <td>Worked On Duty -Employee..</td>
+                                        <td>NJT3453</td>
+                                        <td>12/15/2016</td>
+                                        <td> <button class="btn btn-info">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="btn btn-primary" style="margin-bottom:1px;margin-top:3px;">New</button> <br />
+                        <button class="btn btn-danger">Delete</button> <br />
+                        <button class="btn btn-secondary" style="margin-bottom:1px;margin-top:3px;">FRA</button> <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">&nbsp;</div>
+        </div>
+        <div class="tblDiv">
+            <div>
+                <div class="row">
+                    <div class="col-11">
+                        <div class="tblHeader" style="background-color:darkgoldenrod;">
+                            Equipment Damage (97)(54)
+                        </div>
+                        <div class="tblBody">
+                            <table class="tablenoborder" id="tblIncidents">
+                                <thead>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>Incident Number</td>
+                                        <td>Train Number</td>
+                                        <td>Type Of Equipment</td>
+                                        <td>Direction</td>
+                                        <td>Accident Class</td>
+                                        <td>Prepared Date</td>
+                                        <td>Actions</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>2016121501</td>
+                                        <td>NJT3453</td>
+                                        <td>Single Car</td>
+                                        <td>North</td>
+                                        <td>Derallment</td>
+                                        <td>12/15/2016</td>
+                                        <td> <button class="btn btn-info">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="btn btn-primary" style="margin-bottom:1px;margin-top:3px;">New</button> <br />
+                        <button class="btn btn-danger">Delete</button> <br />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">&nbsp;</div>
+        </div>
+        <div class="tblDiv">
+            <div>
+                <div class="row">
+                    <div class="col-11">
+                        <div class="tblHeader" style="background-color:darkcyan;">
+                            HighWay Grade Crossing Accident/Incident(57)
+                        </div>
+                        <div class="tblBody">
+                            <table class="tablenoborder" id="tblIncidents">
+                                <thead>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>Incident Number</td>
+                                        <td>Train Number</td>
+                                        <td>Type Of Train</td>
+                                        <td>Direction</td>
+                                        <td>Grade Direction</td>
+                                        <td>Total Locomotives</td>
+                                        <td>Prepared Date</td>
+                                        <td>Actions</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td>2016121501</td>
+                                        <td>NJT3453</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Ascending</td>
+                                        <td>0</td>
+                                        <td>12/15/2016</td>
+                                        <td> <button class="btn btn-info">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="btn btn-primary" style="margin-bottom:1px;margin-top:3px;">New</button> <br />
+                        <button class="btn btn-danger">Delete</button> <br />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+@code {
+
+    }
