@@ -62,6 +62,7 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
 .bottom-row {
     background-color: #f7f7f7;
     border-top: 1px solid #d6d5d5;
@@ -84,48 +85,66 @@ a, .btn-link {
         /*fontsize is the same copied from navbar-brand style inside NavMenu.razor.css*/
         /*font-size: 1.1rem;*/
     }
+
 table {
-    border:solid 1px black;
-    width:100%;
+    border: solid 1px black;
+    width: 100%;
 }
+
     table tr {
-        font-size:small;
+        font-size: small;
     }
+
 .tablenoborder {
-    border:none;
+    border: none;
 }
+
 table thead {
-    background-color:lightblue;
+    background-color: lightblue;
 }
- .drop-down
- {
-     width:100%;
- }
+
+.drop-down {
+    width: 100%;
+}
+
 .input-Ctrl {
     width: 98%;
 }
+
 .tblDiv {
     border: 1px solid black;
-   /* border-bottom: none;*/
+    /* border-bottom: none;*/
     width: 100%;
 }
+
 .tblHeader {
     background-color: lightsteelblue;
     font-size: small;
-    font-weight:750;
+    font-weight: 750;
 }
+
 .tblBody {
     width: 100%;
     font-size: small;
 }
+
 #tblIncidents {
     border-right: 1px solid black;
 }
-#tblIncidents thead tr td {
-    background-color: lightblue;
-    border: 1px solid black;
-}
-#tblIncidents tbody tr td {
-   /* border-bottom: 1px solid black;*/
-    border-right: 1px solid black;
+
+    #tblIncidents thead tr td {
+        background-color: lightblue;
+        border: 1px solid black;
+    }
+
+    #tblIncidents tbody tr td {
+        /* border-bottom: 1px solid black;*/
+        border-right: 1px solid black;
+    }
+
+.pageHeader {
+    text-align: center;
+    background-color: lightsteelblue;
+    height: 33px;
+    border: 1px solid;
 }
