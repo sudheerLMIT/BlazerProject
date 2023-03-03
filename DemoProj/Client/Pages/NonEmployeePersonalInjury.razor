@@ -1,0 +1,518 @@
+﻿@page "/nonEmployeePersonalInjury"
+
+
+<style>
+    div {
+        padding-bottom: 2px;
+    }
+
+    .tableBorder {
+        border: 1px solid rgba(0,0,0,.125);
+    }
+
+    fieldset {
+        border: 1px solid rgba(0,0,0,.125);
+        padding: 10px;
+    }
+
+        fieldset legend {
+            font-size: medium;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+    .myfieldset {
+        border: 1px solid rgba(0,0,0,.125);
+        padding: 10px;
+    }
+
+    .fullWidth {
+        width: 100%;
+    }
+</style>
+<h4 class="pageHeader">Non-Employee Personal Injury</h4>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="section1" data-bs-toggle="tab" data-bs-target="#section1-pane" type="button" role="tab" aria-controls="section1-pane" aria-selected="true">Section 1</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="section2" data-bs-toggle="tab" data-bs-target="#section2-pane" type="button" role="tab" aria-controls="section2-pane" aria-selected="false">Section 2</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="section3" data-bs-toggle="tab" data-bs-target="#section3-pane" type="button" role="tab" aria-controls="section3-pane" aria-selected="false">Section 3</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="section1-pane" role="tabpanel" aria-labelledby="section1" tabindex="0">
+        <div class="card rounded-3">
+            <div class="card-body p-4 p-md-5">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col-xl-2">
+                            Class Of Person:
+                        </div>
+                        <div class="col-xl-4">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
+                        </div>
+                        <div class="col-xl-2">
+                            Class Of Incident:
+                        </div>
+                        <div class="col-xl-4">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col-xl-2">
+                            Latitude:
+                        </div>
+                        <div class="col-xl-4">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-xl-2">
+                            Longitude:
+                        </div>
+                        <div class="col-xl-4">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <fieldset>
+                                <legend>Injured Person Information:</legend>
+                                <div></div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-2">Last Name :</div>
+                                    <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+                                    <div class="col-xl-2">First Name :</div>
+                                    <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+                                    <div class="col-xl-2">Middle Inital :</div>
+                                    <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-3">Address :</div>
+                                    <div class="col-xl-3"> <input type="text" class="form-control" /></div>
+                                    <div class="col-xl-3">City :</div>
+                                    <div class="col-xl-3"> <input type="text" class="form-control" /></div>
+                                </div>
+
+                                <div class="row align-items-start">
+                                    <div class="col-xl-3">State :</div>
+                                    <div class="col-xl-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                    <div class="col-xl-1">Zip Code :</div>
+                                    <div class="col-xl-1"> <input type="text" class="form-control" /></div>
+                                    <div class="col-xl-1">Gender :</div>
+                                    <div class="col-xl-1"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-1">Birth Date :</div>
+                                    <div class="col-xl-1"> <input type="datetime" class="form-control" placeholder="__/__/____" /></div>
+                                    <div class="col-xl-1">Age Time of Injury :</div>
+                                    <div class="col-xl-1"> <input type="text" class="form-control" /></div>
+                                    <div class="col-xl-3">Home Phone:</div>
+                                    <div class="col-xl-3">
+                                        <input type="text" class="form-control" placeholder="(___) ___-____" />
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col-xl-3">
+                            Passenger Activity:
+                        </div>
+                        <div class="col-xl-3">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
+                        </div>
+                        <div class="col-xl-3">
+                            Trespasser Activity:
+                        </div>
+                        <div class="col-xl-3">
+                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            Date Injury Reported:
+                        </div>
+                        <div class="col">
+                            <input type="date" class="form-control" />
+
+                        </div>
+                        <div class="col">
+                            Time:
+                        </div>
+                        <div class="col">
+                            <input type="time" class="form-control" />
+
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <fieldset>
+                                <legend>Injured</legend>
+                                <div></div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-3">Did Injured Leave Scene Without reporting :</div>
+                                    <div class="col-xl-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                    <div class="col-xl-3">Injured Was Offered First Aid Or Medical Attention :</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-3">Injured Obtained First Aid :</div>
+                                    <div class="col-xl-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                    <div class="col-xl-3">Injured Was Sent to Hospital :</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-3">Injured Declined Medical Attention :</div>
+                                    <div class="col-xl-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                    <div class="col-xl-3">Injured Obtained Medical Attention :</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-start">
+                                    <div class="col-xl-3">Injured Will See Owner Doctor :</div>
+                                    <div class="col-xl-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col-md-2">Train Number :</div>
+                        <div class="col-md-2"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                        <div class="col-xl-1">Car :</div>
+                        <div class="col-md-2"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                        <div class="col-xl-1">Type :</div>
+                        <div class="col-xl-1"> <input class="form-control" /></div>
+                        <div class="col-xl-1">Door :</div>
+                        <div class="col-md-2"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                    </div>
+                    <div class="row align-items-start">
+                        <fieldset>
+                            <legend>Circumstances</legend>
+                            <div class="col-md-12">
+                                <textarea rows="5" class="fullWidth form-control"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row" style="padding-top:10px;">
+                    <div class="col-xl-1">
+                        <button class="btn btn-primary">FRA..</button>
+                    </div>
+                    <div class="col-xl-9"></div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-primary">Save</button>
+                    </div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="section2-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
+
+        <div class="card rounded-3">
+            <div class="card-body p-4 p-md-5">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <fieldset>
+                            <legend>Nature Of Injury</legend>
+                            <div class="col-md-12">
+                                <textarea rows="5" class="fullWidth form-control"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="row align-items-start">
+                        <fieldset>
+                            <legend>Please Click On Add Button To Select Injury Details(Required)</legend>
+                            <div class="tblDiv" style="margin-top:1px;">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="tblBody">
+                                                <table class="tablenoborder" id="tblIncidents">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Side Of Body</td>
+                                                            <td>Body Part Injured</td>
+                                                            <td>Nature Of Injury</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top:10px;">
+                                <div class="col-xl-9"></div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-primary">Add</button>
+                                </div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="row align-items-start">
+                        <fieldset>
+                            <legend>Physical Information</legend>
+                            <div class="tblDiv" style="margin-top:1px;">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="tblBody">
+                                                <table class="tablenoborder" id="tblIncidents">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Address</td>
+                                                            <td>Phone</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top:10px;">
+                                <div class="col-xl-9"></div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-primary">Add</button>
+                                </div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-info">Edit</button>
+                                </div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="section3-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
+
+        <div class="row align-items-start">
+            <fieldset>
+                <legend>Hospital Information</legend>
+                <div class="tblDiv" style="margin-top:1px;">
+                    <div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tblBody">
+                                    <table class="tablenoborder" id="tblIncidents">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Address</td>
+                                                <td>Phone</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row" style="padding-top:10px;">
+                    <div class="col-xl-9"></div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-primary">Add</button>
+                    </div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-info">Edit</button>
+                    </div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </fieldset>
+
+        </div>
+
+        <div class="row align-items-start">
+            <fieldset>
+                <legend>Medical Treatment Description</legend>
+                <div class="tblDiv" style="margin-top:1px;">
+<textarea style="width:100%"></textarea>
+                </div>
+
+            </fieldset>
+
+        </div>
+
+        <div class="row align-items-start">
+            <fieldset>
+                <legend>Person Noticed</legend>
+                <div class="tblDiv" style="margin-top:1px;">
+                    <div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tblBody">
+                                    <table class="tablenoborder" id="tblIncidents">
+                                        <thead>
+                                            <tr>
+                                                <td>Employee Number</td>
+                                                <td>Name</td>
+                                                <td>Title</td>
+                                                <td>Phone</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row" style="padding-top:10px;">
+                    <div class="col-xl-9"></div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-primary">Add</button>
+                    </div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-info">Edit</button>
+                    </div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </fieldset>
+
+        </div>
+
+        <div class="row align-items-start">
+            <fieldset>
+                <legend>Person Information</legend>
+                <div class="tblDiv" style="margin-top:1px;">
+                    <div>
+                        <div class="row" style="padding:5px;">
+                            <div class="col-xl-1">
+                                Name:
+                            </div>
+                            <div class="col-xl-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-xl-1">
+                                Date Prepared:
+                            </div>
+                            <div class="col-xl-3">
+                                <input type="date" class="form-control" />
+                            </div>
+                            <div class="col-xl-1">
+                                Date Signed:
+                            </div>
+                            <div class="col-xl-3">
+                                <input type="date" class="form-control" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row" style="padding-top:10px;">
+                    <div class="col-xl-9"></div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-primary">Add</button>
+                    </div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-info">Edit</button>
+                    </div>
+                    <div class="col-xl-1">
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </fieldset>
+
+        </div>
+    </div>
+
+    
+</div>
+<div class="row" style="padding-top:10px;">
+        <div class="col-xl-1">
+            <button class="btn btn-primary">FRA..</button>
+        </div>
+        <div class="col-xl-9"></div>
+        <div class="col-xl-1">
+            <button class="btn btn-primary">Save</button>
+        </div>
+        <div class="col-xl-1">
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </div>
+@code {
+
+}

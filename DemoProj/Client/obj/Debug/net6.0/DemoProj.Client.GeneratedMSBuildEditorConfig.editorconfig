@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVQZXJzb25hbEluanVyeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/EuipmentDamage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXVpcG1lbnREYW1hZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Sudheer/BlazerProject/DemoProj/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Sudheer/BlazerProject/DemoProj/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/NonEmployeePersonalInjury.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm9uRW1wbG95ZWVQZXJzb25hbEluanVyeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Sudheer/BlazerProject/DemoProj/Client/Pages/SRS.razor]
