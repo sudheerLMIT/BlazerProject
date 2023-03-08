@@ -1,0 +1,736 @@
+﻿@page "/hgcair"
+
+
+<style>
+    div {
+        padding-bottom: 2px;
+    }
+
+    .tableBorder {
+        border: 1px solid rgba(0,0,0,.125);
+    }
+
+    fieldset {
+        border: 1px solid rgba(0,0,0,.125);
+        padding: 10px;
+    }
+
+        fieldset legend {
+            font-size: medium;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+    .myfieldset {
+        border: 1px solid rgba(0,0,0,.125);
+        padding: 10px;
+    }
+
+    .fullWidth {
+        width: 100%;
+    }
+</style>
+<div style="overflow-y:auto;">
+    <div class="row">
+        <h4 class="pageHeader">Highway Grade Crossing Accident/Incident Report</h4>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="section1" data-bs-toggle="tab" data-bs-target="#section1-pane" type="button" role="tab" aria-controls="section1-pane" aria-selected="true">Section 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="section2" data-bs-toggle="tab" data-bs-target="#section2-pane" type="button" role="tab" aria-controls="section2-pane" aria-selected="false">Section 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="section3" data-bs-toggle="tab" data-bs-target="#section3-pane" type="button" role="tab" aria-controls="section3-pane" aria-selected="false">Section 3</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="section1-pane" role="tabpanel" aria-labelledby="section1" tabindex="0">
+                <div class="card rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-xl-2">
+                                    Latitude:
+                                </div>
+                                <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                <div class="col-xl-1">
+                                    Longitude:
+                                </div>
+                                <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                <div class="col-xl-2">
+                                    Class of incident:
+                                </div>
+                                <div class="col-xl-2">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <fieldset>
+                                        <legend>Train & Track Information:</legend>
+                                        <div></div>
+                                        <div class="row align-items-start">
+                                            <div class="col-xl-2">Train number :</div>
+                                            <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+                                            <div class="col-xl-2">Number of locomotives :</div>
+                                            <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+                                            <div class="col-xl-2">Cars :</div>
+                                            <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+
+                                        </div>
+                                        <div class="row align-items-start">
+                                            <div class="col-xl-2">Type of train :</div>
+                                            <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+                                            <div class="col-xl-2">Number of people on train :</div>
+                                            <div class="col-xl-2"> <input type="text" class="form-control" /></div>
+                                            <div class="col-xl-2">Railroad euipment involved :</div>
+                                            <div class="col-xl-2"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                        </div>
+                                        <div class="row align-items-start">
+                                            <div class="col-xl-2">If others specify :</div>
+                                            <div class="col-xl-5"> <input type="text" class="form-control" /></div>
+                                        </div>
+                                        <div class="row align-items-start">
+                                            <div class="col-xl-5">Position of first car which struck or struck by highway user :</div>
+                                            <div class="col-xl-1"> <input type="text" class="form-control" /></div>
+                                            <div class="col-xl-2">Circumstances :</div>
+                                            <div class="col-xl-3"><select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                            </div>
+                            <div class="row align-items-start">
+                                <h4 class="pageHeader">Crew Information</h4>
+                                <div class="tblDiv" style="margin-top:1px;">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="tblBody">
+                                                    <table class="tablenoborder" id="tblIncidents">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Crew Type</td>
+                                                                <td>Employee Number</td>
+                                                                <td>Name</td>
+                                                                <td>DayHours-Hours</td>
+                                                                <td>DayHours-Minutes</td>
+                                                                <td>On Equipment</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row align-items-start align-right" style="padding-top:10px;">
+                                <div class="col-xl-9"></div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-primary">Add</button>
+                                </div>
+
+                                <div class="col-xl-1">
+                                    <button class="btn btn-info">Edit</button>
+                                </div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                            <div class="row align-items-start" style="padding-top:10px;">
+                                <div class="col-xl-2">More than one engineer?</div>
+                                <div class="col-xl-3">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                </div>
+                                <div class="col-xl-2">Roadway condition</div>
+                                <div class="col-xl-3">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>Track information </legend>
+                                    <div class="row">
+                                        <div class="col-md-2">Track no/name:</div>
+                                        <div class="col-md-3"> <input class="form-control" /></div>
+                                        <div class="col-md-2">Class of track:</div>
+                                        <div class="col-md-3">  <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">Track condition:</div>
+                                        <div class="col-md-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                        <div class="col-md-2">Type of track:</div>
+                                        <div class="col-md-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start"> &nbsp;</div>
+                            <div class="row align-items-start">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        Train speed
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input class="form-control" placeholder="MPH" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        Reading by est/recorded
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        Duration
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        Equipment attnded
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        Grade condition
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        Train tons
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top:10px;">
+                                    <div class="col-xl-9"></div>
+                                    <div class="col-xl-1">
+                                        <button class="btn btn-primary">Save</button>
+                                    </div>
+                                    <div class="col-xl-1">
+                                        <button class="btn btn-danger">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="section2-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
+                <div class="card rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        <div style="border:1px solid silver;">
+                            <div>
+                                <div class="tblHeader">Crossing Information</div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-4">
+                                        <table style="height:100px;overflow-y:auto;" id="tblIncidents">
+                                            <thead>
+                                                <tr><td>Select</td><td>Cross Warning Type</td></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="checkbox" class="form-check" /></td>
+                                                    <td>Gates</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="form-check" /></td>
+                                                    <td>Cantilever Fls</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="form-check" /></td>
+                                                    <td>Standard Fls</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="form-check" /></td>
+                                                    <td>Wig Wags</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <div class="row">
+                                            <div class="col-xl-3">Signaled crossing warning:</div>
+                                            <div class="col-xl-3">
+                                                <select class="form-control">
+                                                    <option>[--SELECT--]</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-3">Crossing Illuminated by street lights:</div>
+                                            <div class="col-xl-3">
+                                                <select class="form-control">
+                                                    <option>[--SELECT--]</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-3">Connecting with highway signals:</div>
+                                            <div class="col-xl-3">
+                                                <select class="form-control">
+                                                    <option>[--SELECT--]</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col-xl-2">Warning location:</div>
+                                    <div class="col-xl-2">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xl-2">DOT_ARR ID:</div>
+                                    <div class="col-xl-2">
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="col-xl-2">Public:</div>
+                                    <div class="col-xl-2">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xl-2">Private:</div>
+                                    <div class="col-xl-2">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="padding:15px;">
+                                    <fieldset>
+                                        <legend>Number of cars in consist derailed that were</legend>
+                                        <div class="row">
+                                            <div class="col-xl-6" style="margin-top:1px;">
+                                                <fieldset>
+                                                    <legend>Loaded</legend>
+                                                    <div class="row">
+                                                        <div class="col-sm">Flight:</div>
+                                                        <div class="col-sm"><input type="text"></div>
+                                                        <div class="col-sm">Passanger:</div>
+                                                        <div class="col-sm"><input type="text"></div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-xl-6" style="margin-top:1px;">
+                                                <fieldset>
+                                                    <legend>Loaded</legend>
+                                                    <div class="row">
+                                                        <div class="col-sm">Flight:</div>
+                                                        <div class="col-sm"><input type="text"></div>
+                                                        <div class="col-sm">Passanger:</div>
+                                                        <div class="col-sm"><input type="text"></div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="row align-items-start" style="padding:15px;">
+                                <div class="tblHeader">Highway user Information</div>
+                                <div class="row">
+                                    <div class="col-xl-3">Vehicle type:</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xl-3">Vehicle direction:</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-3">Vehicle position:</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xl-3">Vehicle speed:</div>
+                                    <div class="col-xl-3">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xl-3">Motorist action:</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xl-3">View of track obscured by:</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xl-4">Struck by 2nd train after driving around 1st train:</div>
+                                    <div class="col-xl-2">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-xl-3">Drove around standing vehicle:</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row align-items-start" style="padding:15px;">
+                                <fieldset>
+                                    <legend>Involved automobile information</legend>
+                                    <div class="row">
+                                        <div class="col-sm">Make:</div>
+                                        <div class="col-sm"><input type="text" class="form-control"></div>
+                                        <div class="col-sm">year:</div>
+                                        <div class="col-sm"><input type="text" class="form-control"></div>
+                                        <div class="col-sm">License number:</div>
+                                        <div class="col-sm"><input type="text" class="form-control"></div>
+                                        <div class="col-sm">State:</div>
+                                        <div class="col-sm">
+                                            <select class="form-control">
+                                                <option>[--SELECT--]</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-xl-3">Property damage:</div>
+                                <div class="col-xl-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row align-items-start" style="padding:15px;">
+                                <fieldset>
+                                    <legend>Vehicle registration information</legend>
+                                    <div class="row">
+
+                                        <div class="col-xl-3">Last name:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                        <div class="col-xl-3">First name:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                        <div class="col-xl-1">Mintial:</div>
+                                        <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-xl-3">Address:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                        <div class="col-xl-3">City name:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-xl-3">State:</div>
+                                        <div class="col-xl-2">
+                                            <select class="form-control">
+                                                <option>[--SELECT--]</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-3">Zip code:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row" style="padding-top:10px;">
+                                <div class="col-xl-9"></div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-primary">Save</button>
+                                </div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="tab-pane fade" id="section3-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
+                <div class="card rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        <div style="border:1px solid silver;">
+                            <div>
+                                <div class="tblHeader">Highway user information</div>
+                                <div class="row align-items-start" style="padding:15px;">
+                                    <fieldset>
+                                        <legend>Vehicle registration information</legend>
+                                        <div class="row">
+
+                                            <div class="col-xl-3">Last name:</div>
+                                            <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                            <div class="col-xl-3">First name:</div>
+                                            <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                            <div class="col-xl-1">Mintial:</div>
+                                            <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-xl-3">Address:</div>
+                                            <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                            <div class="col-xl-3">City name:</div>
+                                            <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">State:</div>
+                                            <div class="col-md-1">
+                                                <select class="form-control">
+                                                    <option>SELECT</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-1">Zip code:</div>
+                                            <div class="col-md-1"><input type="text" class="form-control"></div>
+                                            <div class="col-md-1">Age:</div>
+                                            <div class="col-md-1"><input type="text" class="form-control"></div>
+                                            <div class="col-md-1">Gender:</div>
+                                            <div class="col-md-1">
+                                                <select class="form-control">
+                                                    <option>SELECT</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-1">Driver was:</div>
+                                            <div class="col-md-1">
+                                                <select class="form-control">
+                                                    <option>SELECT</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col-md-2">Was driver in the vehicle:</div>
+                                    <div class="col-md-1">
+                                        <select class="form-control">
+                                            <option>SELECT</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2">Restarting equipment used:</div>
+                                    <div class="col-md-1">
+                                        <select class="form-control">
+                                            <option>SELECT</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-1">Windows up:</div>
+                                    <div class="col-md-1">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2">Citation issued:</div>
+                                    <div class="col-md-1">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start" style="padding:15px;">
+                                    <div class="tblHeader">Involved  user information</div>
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="tblBody" style="border:1px solid silver;">
+                                                    <table class="tablenoborder" id="tblIncidents">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Last name</td>
+                                                                <td>First name</td>
+                                                                <td>Middle initial</td>
+                                                                <td>Address</td>
+                                                                <td>City</td>
+                                                                <td>State</td>
+
+                                                                <td>Zip code</td>
+                                                                <td>Age</td>
+                                                                <td>Injury</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top:10px;">
+                                            <div class="col-xl-9"></div>
+                                            <div class="col-xl-1">
+                                                <button class="btn btn-primary">Add</button>
+                                            </div>
+
+                                            <div class="col-xl-1">
+                                                <button class="btn btn-info">Edit</button>
+                                            </div>
+                                            <div class="col-xl-1">
+                                                <button class="btn btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+
+                                </div>
+                            </div>
+                            <div class="row align-items-start" style="padding:15px;">
+                                <div class="row">
+                                    <div class="col-xl-4">Is a real euipment accident/incident report being filed:</div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row align-items-start" style="padding:15px;">
+                                <div class="tblHeader" style="text-align:center;">Special Study Block</div>
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-sm">Special Study Block1:</div>
+                                        <div class="col-sm"><input type="text" class="form-control"></div>
+                                        <div class="col-sm">Special Study Block2:</div>
+                                        <div class="col-sm"><input type="text" class="form-control"></div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start" style="padding:15px;">
+                                <fieldset>
+                                    <legend>Remarks</legend>
+                                    <div class="row">
+                                        <textarea class="form-control" style="width:100%;" rows="5"></textarea>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-xl-3">Have you completed your review:</div>
+                                <div class="col-xl-3">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row align-items-start" style="padding:15px;">
+                                <div class="tblHeader">Preparer and reviwer information</div>
+                                <fieldset>
+                                    <div class="row">
+
+                                        <div class="col-xl-2">Name:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                        <div class="col-xl-2">Date prepared:</div>
+                                        <div class="col-xl-2"><input type="date" class="form-control"></div>
+                                        <div class="col-xl-2">Date submitted:</div>
+                                        <div class="col-xl-1"><input type="date" class="form-control"></div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-xl-2">Reviewed by:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                        <div class="col-xl-3">User Id:</div>
+                                        <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                        <div class="col-xl-2">Date submitted:</div>
+                                        <div class="col-xl-1"><input type="date" class="form-control" placeholder="__/__/___"></div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row" style="padding-top:10px;">
+                                <div class="col-xl-9"></div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-primary">Save</button>
+                                </div>
+                                <div class="col-xl-1">
+                                    <button class="btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+@code {
+
+}

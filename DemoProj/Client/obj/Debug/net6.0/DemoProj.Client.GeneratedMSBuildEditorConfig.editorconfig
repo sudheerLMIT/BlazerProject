@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Sudheer/BlazerProject/DemoProj/Client/Pages/HGCAIR.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSEdDQUlSLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Sudheer/BlazerProject/DemoProj/Client/Pages/IncidentDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5jaWRlbnREZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

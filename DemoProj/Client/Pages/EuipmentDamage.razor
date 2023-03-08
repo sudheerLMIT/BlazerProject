@@ -30,7 +30,7 @@
         width: 100%;
     }
 </style>
-<div>
+<div style="overflow-y:auto;">
     <div class="row">
         <h4 class="pageHeader">Euipment Damage</h4>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -295,15 +295,14 @@
                     <div class="card-body p-4 p-md-5">
                         <div>
                             <div class="row align-items-start">
-                                <div class="col-12">
-                                    <div class="col-xl-3">
-                                        Class of incident:
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <select class="form-control">
-                                            <option>[--SELECT--]</option>
-                                        </select>
-                                    </div>
+
+                                <div class="col-xl-2">
+                                    Class of incident:
+                                </div>
+                                <div class="col-xl-3">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row align-items-start">
@@ -732,6 +731,18 @@
         </div>
     </div>
     <div class="row" style="padding-top:10px;">
+        <div class="col-xl-1">
+            <button class="btn btn-primary">FRA..</button>
+        </div>
+        <div class="col-xl-9"></div>
+        <div class="col-xl-1">
+            <button class="btn btn-primary">Save</button>
+        </div>
+        <div class="col-xl-1">
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </div>
+    <div class="row" style="padding-top:10px;display:none;">
         <div class="col-xl-1">
             <button class="btn btn-primary">FRA..</button>
         </div>

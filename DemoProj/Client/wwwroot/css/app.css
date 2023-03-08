@@ -135,11 +135,14 @@ table thead {
     #tblIncidents thead tr td {
         background-color: lightblue;
         border: 1px solid black;
+        text-align:center;
     }
 
     #tblIncidents tbody tr td {
         /* border-bottom: 1px solid black;*/
         border-right: 1px solid black;
+        text-align: center;
+        padding-left:5px;
     }
 
 .pageHeader {
