@@ -3,7 +3,9 @@
 @using DemoProj.Shared
 @inject HttpClient Http
 <b>SRS</b>
+<style>
 
+</style>
 <div class="input-group">
 
 
@@ -15,24 +17,36 @@
             <table class="tablenoborder">
                 <tr>
                     <td>Incident Number:</td>
-                    <td><input type="text" class="form-control input-Ctrl" placeholder="Incident Number" /></td>
+                    <td><input type="text" class="form-control input-Ctrl inpuCtrl" placeholder="Incident Number" /></td>
                     <td>Nearest station:</td>
                     <td>
-                       @* <input type="text" class="form-control input-Ctrl" />*@
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                [--Select Nearest station--]
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">KPHP</a></li>
-                                <li><a class="dropdown-item" href="#">AmeerPet</a></li>
-                                <li><a class="dropdown-item" href="#">In Progress</a></li>
-                            </ul>
-                        </div>
-                        </td>
+                        @* <input type="text" class="form-control input-Ctrl" />*@
+                        @* <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        [--Select Nearest station--]
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item">KPHP</li>
+                        <li class="dropdown-item">AmeerPet</li>
+                        <li class="dropdown-item">In Progress</li>
+                        </ul>
+                        </div>*@
+
+                        <select class="form-control inpuCtrl">
+                            <option>[--Select Status--]</option>
+                            <option>KPHB</option>
+                            <option>AmeerPet</option>
+                        </select>
+                    </td>
                     <td>Status:</td>
                     <td>
-                        <div class="dropdown">
+                        <select class="form-control inpuCtrl">
+                            <option>[--Select Status--]</option>
+                            <option>Open</option>
+                            <option>Closed</option>
+                            <option>In Progress</option>
+                        </select>
+                        @*<div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 [--Select Status--]
                             </button>
@@ -41,12 +55,12 @@
                                 <li><a class="dropdown-item" href="#">Closed</a></li>
                                 <li><a class="dropdown-item" href="#">In Progress</a></li>
                             </ul>
-                        </div>
+                        </div>*@
                     </td>
                     <td>Start Date:</td>
-                    <td><input type="date" class="form-control input-Ctrl" /></td>
+                    <td><input type="date" class="form-control input-Ctrl inpuCtrl" /></td>
                     <td>End Date:</td>
-                    <td><input type="date" class="form-control input-Ctrl" /></td>
+                    <td><input type="date" class="form-control input-Ctrl inpuCtrl" /></td>
                 </tr>
             </table>
         </div>

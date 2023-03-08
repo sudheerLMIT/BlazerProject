@@ -148,3 +148,12 @@ table thead {
     height: 33px;
     border: 1px solid;
 }
+.inpuCtrl {
+    width: 80px;
+}
+select {
+    width: 80px;
+}
+.rowmargin{
+    padding-top:5px;
+}

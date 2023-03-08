@@ -30,573 +30,718 @@
         width: 100%;
     }
 </style>
-<h4 class="pageHeader">Euipment Damage</h4>
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="section1" data-bs-toggle="tab" data-bs-target="#section1-pane" type="button" role="tab" aria-controls="section1-pane" aria-selected="true">Section 1</button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" id="section2" data-bs-toggle="tab" data-bs-target="#section2-pane" type="button" role="tab" aria-controls="section2-pane" aria-selected="false">Section 2</button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" id="section3" data-bs-toggle="tab" data-bs-target="#section3-pane" type="button" role="tab" aria-controls="section3-pane" aria-selected="false">Section 3</button>
-    </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="section1-pane" role="tabpanel" aria-labelledby="section1" tabindex="0">
-        <div class="card rounded-3">
-            <div class="card-body p-4 p-md-5">
-                <div class="container">
-                    @*<div class="row align-items-start">
-                    <div class="col-xl-2">
-                    Class Of Person:
-                    </div>
-                    <div class="col-xl-4">
-                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-
-                    </div>
-                    <div class="col-xl-2">
-                    Class Of Incident:
-                    </div>
-                    <div class="col-xl-4">
-                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-                    </div>
-                    </div>*@
-                    <div class="row align-items-start">
-                        <div class="col-xl-2">
-                            Latitude:
-                        </div>
-                        <div class="col-xl-4">
-                            <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-xl-2">
-                            Longitude:
-                        </div>
-                        <div class="col-xl-4">
-                            <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-xl-2">
-                            Train Number:
-                        </div>
-                        <div class="col-xl-4">
-                            <input type="text" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="row align-items-start">
-                        <div class="col-xl-2">
-                            Was Consist Transporting Passengers:
-                        </div>
-                        <div class="col-xl-1">
-                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-                        </div>
-                        <div class="col-xl-2">
-                            Locomotive Power:
-                        </div>
-                        <div class="col-xl-4">
-                            <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-xl-2">
-                            Train Hom Working:
-                        </div>
-                        <div class="col-xl-1">
-                            <input type="text" class="form-control" />
-                        </div>
-                        <div class="col-xl-2">
-                            Train Headlight Working:
-                        </div>
-                        <div class="col-xl-1">
-                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-                        </div>
-                    </div>
-                    <div class="row align-items-start">
-                        <div class="col">
-                            <fieldset>
-                                <legend>Nearesrt Station Information:</legend>
-                                <div></div>
-                                <div class="row align-items-start">
-                                    <div class="col-xl-2">Nearesrt Station :</div>
-                                    <div class="col-xl-4"> <input type="text" class="form-control" /></div>
-                                    <div class="col-xl-2">City :</div>
-                                    <div class="col-xl-4"> <input type="text" class="form-control" /></div>
+<div>
+    <div class="row">
+        <h4 class="pageHeader">Euipment Damage</h4>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="section1" data-bs-toggle="tab" data-bs-target="#section1-pane" type="button" role="tab" aria-controls="section1-pane" aria-selected="true">Section 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="section2" data-bs-toggle="tab" data-bs-target="#section2-pane" type="button" role="tab" aria-controls="section2-pane" aria-selected="false">Section 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="section3" data-bs-toggle="tab" data-bs-target="#section3-pane" type="button" role="tab" aria-controls="section3-pane" aria-selected="false">Section 3</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="section1-pane" role="tabpanel" aria-labelledby="section1" tabindex="0">
+                <div class="card rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-xl-2">
+                                    Latitude:
                                 </div>
-                                <div class="row align-items-start">
-                                    <div class="col-xl-3">State :</div>
-                                    <div class="col-xl-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
-                                    <div class="col-xl-1">Zip Code :</div>
-                                    <div class="col-xl-1"> <input type="text" class="form-control" /></div>
-                                    <div class="col-xl-1">Country :</div>
-                                    <div class="col-xl-1"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                <div class="col-xl-1">
+                                    Longitude:
                                 </div>
-                            </fieldset>
-                        </div>
-
-                    </div>
-                    <div class="row align-items-start">
-                        <div class="col-xl-2">
-                            Other RR Involved:
-                        </div>
-                        <div class="col-xl-4">
-                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-
-                        </div>
-                        <div class="col-xl-4">
-                            Report Equipment Information(Fields 24 to 45) to FRA:
-                        </div>
-                        <div class="col-xl-2">
-                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-
-                        </div>
-                    </div>
-                    <div class="row align-items-start">
-                        <div class="col-xl-2">
-                            Type of Consist:
-                        </div>
-                        <div class="col-xl-4">
-                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-
-                        </div>
-                        <div class="col-xl-6">
-                        </div>
-                    </div>
-
-                    <div class="row align-items-start">
-                        <h4 class="pageHeader">Crew Information</h4>
-                        <div class="tblDiv" style="margin-top:1px;">
-                            <div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="tblBody">
-                                            <table class="tablenoborder" id="tblIncidents">
-                                                <thead>
-                                                    <tr>
-                                                        <td>Crew Type</td>
-                                                        <td>Employee Number</td>
-                                                        <td>Name</td>
-                                                        <td>DayHours-Hours</td>
-                                                        <td>DayHours-Minutes</td>
-                                                        <td>On Equipment</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                <div class="col-xl-2">
+                                    Train Number:
+                                </div>
+                                <div class="col-xl-2"><select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-xl-2">
+                                    Was Consist Transporting Passengers:
+                                </div>
+                                <div class="col-xl-2">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                </div>
+                                <div class="col-xl-1">
+                                    Locomotive Power:
+                                </div>
+                                <div class="col-xl-2">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-xl-2">
+                                    Train Hom Working:
+                                </div>
+                                <div class="col-xl-1">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-xl-2">
+                                    Train Headlight Working:
+                                </div>
+                                <div class="col-xl-1">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <fieldset>
+                                        <legend>Nearesrt Station Information:</legend>
+                                        <div></div>
+                                        <div class="row align-items-start">
+                                            <div class="col-xl-2">Nearesrt Station :</div>
+                                            <div class="col-xl-4"> <input type="text" class="form-control" /></div>
+                                            <div class="col-xl-2">City :</div>
+                                            <div class="col-xl-4"> <input type="text" class="form-control" /></div>
                                         </div>
-                                    </div>
+                                        <div class="row align-items-start">
+                                            <div class="col-xl-3">State :</div>
+                                            <div class="col-xl-3"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                            <div class="col-xl-1">Zip Code :</div>
+                                            <div class="col-xl-1"> <input type="text" class="form-control" /></div>
+                                            <div class="col-xl-1">Country :</div>
+                                            <div class="col-xl-1"> <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select></div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-xl-2">
+                                    Other RR Involved:
+                                </div>
+                                <div class="col-xl-4">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
+                                </div>
+                                <div class="col-xl-4">
+                                    Report Equipment Information(Fields 24 to 45) to FRA:
+                                </div>
+                                <div class="col-xl-2">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="row align-items-start align-right" style="padding-top:10px;">
-                        <div class="col-xl-9"></div>
-                        <div class="col-xl-1">
-                            <button class="btn btn-primary">Add</button>
-                        </div>
-
-                        <div class="col-xl-1">
-                            <button class="btn btn-info">Edit..</button>
-                        </div>
-                        <div class="col-xl-1">
-                            <button class="btn btn-danger">Cancel</button>
-                        </div>
-                    </div>
-                    <div class="row align-items-start" style="padding-top:10px;">
-                        <div class="col-xl-2">More than one engineer?</div>
-                        <div class="col-xl-3">
-                            <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
-                        </div>
-                        <div class="col-xl-4">Number of assistant conductor on train at time of accident?</div>
-                        <div class="col-xl-3">
-                            <input class="form-control" />
-                        </div>
-                    </div>
-
-                    <div class="row align-items-start">
-                        <fieldset>
-                            <legend>Total number of cars in consist </legend>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <legend>Loaded</legend>
-                                        <div class="col-md-2">Fright:</div>
-                                        <div class="col-md-1"> <input class="form-control" /></div>
-                                        <div class="col-md-2">Passanger:</div>
-                                        <div class="col-md-1"> <input class="form-control" /></div>
-                                    </div>
+                            <div class="row align-items-start">
+                                <div class="col-xl-2">
+                                    Type of Consist:
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <legend>Empty </legend>
-                                        <div class="col-md-2">Fright:</div>
-                                        <div class="col-md-1"> <input class="form-control" /></div>
-                                        <div class="col-md-2">Passanger:</div>
-                                        <div class="col-md-1"> <input class="form-control" /></div>
-                                    </div>
+                                <div class="col-xl-4">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+
+                                </div>
+                                <div class="col-xl-6">
                                 </div>
                             </div>
-                        </fieldset>
-                    </div>
-                    <div class="row align-items-start">
-                        <fieldset>
-                            <legend>List of each car in consist</legend>
-                            <div class="row">
-                                <div class="col">
-                                    1.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    2.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    3.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    4.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    5.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    6.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    7.<input class="form-control" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    8.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    9.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    10.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    11.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    12.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    13.<input class="form-control" />
-                                </div>
-                                <div class="col">
-                                    14.<input class="form-control" />
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-
-    </div>
-    <div class="tab-pane fade" id="section2-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
-
-        <div class="card rounded-3">
-            <div class="card-body p-4 p-md-5">
-                <div class="container">
-                    <div class="row align-items-start">
-                        <fieldset>
-                            <legend>Nature Of Injury</legend>
-                            <div class="col-md-12">
-                                <textarea rows="5" class="fullWidth form-control"></textarea>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div class="row align-items-start">
-                        <fieldset>
-                            <legend>Please Click On Add Button To Select Injury Details(Required)</legend>
-                            <div class="tblDiv" style="margin-top:1px;">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="tblBody">
-                                                <table class="tablenoborder" id="tblIncidents">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Side Of Body</td>
-                                                            <td>Body Part Injured</td>
-                                                            <td>Nature Of Injury</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                            <div class="row align-items-start">
+                                <h4 class="pageHeader">Crew Information</h4>
+                                <div class="tblDiv" style="margin-top:1px;">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="tblBody">
+                                                    <table class="tablenoborder" id="tblIncidents">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Crew Type</td>
+                                                                <td>Employee Number</td>
+                                                                <td>Name</td>
+                                                                <td>DayHours-Hours</td>
+                                                                <td>DayHours-Minutes</td>
+                                                                <td>On Equipment</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="row" style="padding-top:10px;">
+                            <div class="row align-items-start align-right" style="padding-top:10px;">
                                 <div class="col-xl-9"></div>
                                 <div class="col-xl-1">
                                     <button class="btn btn-primary">Add</button>
                                 </div>
-                                <div class="col-xl-1">
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div class="row align-items-start">
-                        <fieldset>
-                            <legend>Physical Information</legend>
-                            <div class="tblDiv" style="margin-top:1px;">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="tblBody">
-                                                <table class="tablenoborder" id="tblIncidents">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Address</td>
-                                                            <td>Phone</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-top:10px;">
-                                <div class="col-xl-9"></div>
-                                <div class="col-xl-1">
-                                    <button class="btn btn-primary">Add</button>
-                                </div>
+
                                 <div class="col-xl-1">
                                     <button class="btn btn-info">Edit</button>
                                 </div>
                                 <div class="col-xl-1">
-                                    <button class="btn btn-danger">Delete</button>
+                                    <button class="btn btn-danger">Cancel</button>
                                 </div>
                             </div>
-                        </fieldset>
+                            <div class="row align-items-start" style="padding-top:10px;">
+                                <div class="col-xl-2">More than one engineer?</div>
+                                <div class="col-xl-3">
+                                    <select class="form-control" style="text-align:center;"><option>[--SELECT--]</option></select>
+                                </div>
+                                <div class="col-xl-4">Number of assistant conductor on train at time of accident?</div>
+                                <div class="col-xl-3">
+                                    <input class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>Total number of cars in consist </legend>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <legend>Loaded</legend>
+                                                <div class="col-md-2">Fright:</div>
+                                                <div class="col-md-1"> <input class="form-control" /></div>
+                                                <div class="col-md-2">Passanger:</div>
+                                                <div class="col-md-1"> <input class="form-control" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <legend>Empty </legend>
+                                                <div class="col-md-2">Fright:</div>
+                                                <div class="col-md-1"> <input class="form-control" /></div>
+                                                <div class="col-md-2">Passanger:</div>
+                                                <div class="col-md-1"> <input class="form-control" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>List of each car in consist</legend>
+                                    <div class="row">
+                                        <div class="col">
+                                            1.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            2.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            3.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            4.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            5.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            6.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            7.<input class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            8.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            9.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            10.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            11.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            12.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            13.<input class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            14.<input class="form-control" />
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="section2-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
+                <div class="card rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        <div>
+                            <div class="row align-items-start">
+                                <div class="col-12">
+                                    <div class="col-xl-3">
+                                        Class of incident:
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>Number of cars in consist derailed that were</legend>
+                                    <div class="row">
+                                        <div class="col-xl-6" style="margin-top:1px;">
+                                            <fieldset>
+                                                <legend>Loaded</legend>
+                                                <div class="row">
+                                                    <div class="col-sm">Flight:</div>
+                                                    <div class="col-sm"><input type="text"></div>
+                                                    <div class="col-sm">Passanger:</div>
+                                                    <div class="col-sm"><input type="text"></div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-xl-6" style="margin-top:1px;">
+                                            <fieldset>
+                                                <legend>Loaded</legend>
+                                                <div class="row">
+                                                    <div class="col-sm">Flight:</div>
+                                                    <div class="col-sm"><input type="text"></div>
+                                                    <div class="col-sm">Passanger:</div>
+                                                    <div class="col-sm"><input type="text"></div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>Priniciple vehicles involved</legend>
+                                    <div class="tblDiv" style="margin-top:1px;">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="tblBody">
+                                                        <table class="tablenoborder" id="tblIncidents">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td>Sequence Number</td>
+                                                                    <td>Vehicle Number</td>
+                                                                    <td>Position</td>
+                                                                    <td>Loaded</td>
+                                                                    <td>Vehicle caused incident</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row" style="padding-top:10px;">
+                                        <div class="col-xl-9"></div>
+                                        <div class="col-xl-1">
+                                            <button class="btn btn-primary">Add</button>
+                                        </div>
+                                        <div class="col-xl-1">
+                                            <button class="btn btn-info">Edit</button>
+                                        </div>
+                                        <div class="col-xl-1">
+                                            <button class="btn btn-danger">Delete</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                            </div>
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>Total locomotive units in train</legend>
+                                    <div class="row">
+                                        <div class="col-xl-2" style="padding-top:20px;">
+                                            <div class="row" style="">
+                                                <div class="col-sm">Head End:</div>
+                                                <div class="col-sm"><input class="form-control" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4" style="margin-top:1px;">
+                                            <fieldset>
+                                                <legend>Mid Train</legend>
+                                                <div class="row">
+                                                    <div class="col-sm">Manul:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                    <div class="col-sm">Remote:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-xl-5" style="margin-top:1px;">
+                                            <fieldset>
+                                                <legend>Rear end</legend>
+                                                <div class="row">
+                                                    <div class="col-sm">Manul:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                    <div class="col-sm">Remote:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>Total locomotive units in derailed</legend>
+                                    <div class="row">
+                                        <div class="col-xl-2" style="padding-top:20px;">
+                                            <div class="row" style="">
+                                                <div class="col-sm">Head End:</div>
+                                                <div class="col-sm"><input class="form-control" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4" style="margin-top:1px;">
+                                            <fieldset>
+                                                <legend>Mid Train</legend>
+                                                <div class="row">
+                                                    <div class="col-sm">Manul:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                    <div class="col-sm">Remote:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-xl-5" style="margin-top:1px;">
+                                            <fieldset>
+                                                <legend>Rear end</legend>
+                                                <div class="row">
+                                                    <div class="col-sm">Manul:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                    <div class="col-sm">Remote:</div>
+                                                    <div class="col-sm"><input class="form-control" type="text"></div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-xl-3">Remotely controlled loco:</div>
+                                <div class="col-xl-6">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <fieldset>
+                                    <legend>Track Information</legend>
+                                    <div class="row">
+
+                                        <div class="col-xl-3">Track number or name:</div>
+                                        <div class="col-xl-3"><input type="text" class="form-control"></div>
+                                        <div class="col-xl-3">Class of track:</div>
+                                        <div class="col-xl-3">
+                                            <select class="form-control">
+                                                <option>[--SELECT--]</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-xl-3">Track condition:</div>
+                                        <div class="col-xl-3">
+                                            <select class="form-control">
+                                                <option>[--SELECT--]</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-3">Type of track:</div>
+                                        <div class="col-xl-3">
+                                            <select class="form-control">
+                                                <option>[--SELECT--]</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-xl-2">Train speed:</div>
+                                <div class="col-xl-1"><input class="form-control" type="text"></div>
+                                <div class="col-xl-2">Reading by Est/Recorder speed:</div>
+                                <div class="col-xl-1">
+                                    <select class="form-control">
+                                        <option>SELECT</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-2">Train Direction by Est/Recorder speed:</div>
+                                <div class="col-xl-1">
+                                    <select class="form-control">
+                                        <option>SELECT</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-2">Equipment attended:</div>
+                                <div class="col-xl-1">
+                                    <select class="form-control">
+                                        <option>SELECT</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="tab-pane fade" id="section3-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
 
-        <div class="row align-items-start">
-            <fieldset>
-                <legend>Hospital Information</legend>
-                <div class="tblDiv" style="margin-top:1px;">
-                    <div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="tblBody">
-                                    <table class="tablenoborder" id="tblIncidents">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Address</td>
-                                                <td>Phone</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+            <div class="tab-pane fade" id="section3-pane" role="tabpanel" aria-labelledby="section2" tabindex="0">
+                <div class="card rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row align-items-start">
+                            <div class="row" style="margin-top:4px;">
+                                <div class="col-xl-2">
+                                    Signalization:
+                                </div>
+                                <div class="col-xl-2">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-2">
+                                    Method of operation:
+                                </div>
+                                <div class="col-xl-2">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-2">
+                                    Other specify:
+                                </div>
+                                <div class="col-xl-2">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
 
-                    </div>
+                        <div class="row align-items-start">
+                            <fieldset>
+                                <legend>Adjunct codes</legend>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <select class="form-control">
+                                            <option>[--SELECT--]</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="row align-items-start rowmargin">
+                            <div class="col-xl-2">Trailing tons:</div>
+                            <div class="col-xl-1"><input type="text" class="form-control"></div>
+                            <div class="col-xl-2">Join operations:</div>
+                            <div class="col-xl-1">
+                                <select class="form-control">
+                                    <option>[--SELECT--]</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-2">Total cars damaged:</div>
+                            <div class="col-xl-1"><input type="text" class="form-control"></div>
+                            <div class="col-xl-2">Total cars derailed:</div>
+                            <div class="col-xl-1"><input type="text" class="form-control"></div>
+                        </div>
+                        <div class="row align-items-start rowmargin tblIncidents">
+                            <fieldset>
+                                <legend style="background-color:antiquewhite;">Damages</legend>
 
-                </div>
-                <div class="row" style="padding-top:10px;">
-                    <div class="col-xl-9"></div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-primary">Add</button>
-                    </div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-info">Edit</button>
-                    </div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-danger">Delete</button>
-                    </div>
-                </div>
-            </fieldset>
+                                <div class="row rowmargin">
+                                    <div class="col-xl-1">Units: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-2">Cars: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-2">Equip clean up: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-1">$</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-2"></div>
+                                    <div class="col-xl-2">Track/sig/comm: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-2">Track clean up: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-1">$</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-2"></div>
+                                    <div class="col-xl-2">Private property: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-2">Other clean up: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-1">$</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-5"></div>
+                                    <div class="col-xl-2">Other RR Damage: $</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-1">$</div>
+                                    <div class="col-xl-1"><input type="text" class="form-control"></div> (Grand Total)
+                                </div>
+                            </fieldset>
+                        </div>
 
-        </div>
+                        <div class="row align-items-start rowmargin">
+                            <div class="row">
+                                <div class="col-xl-2">Prinary cause:</div>
+                                <div class="col-xl-6">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2">Contributing cause:</div>
+                                <div class="col-xl-6">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2">Date equipment damage report:</div>
+                                <div class="col-xl-3"><input type="date" class="form-control"></div>
+                                <div class="col-xl-3">Tracking damage report date:</div>
+                                <div class="col-xl-3"><input type="date" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <fieldset>
+                                <legend>Remarks</legend>
+                                <div class="row">
+                                    <textarea class="tblBody" rows="10"></textarea>
+                                </div>
+                            </fieldset>
+                        </div>
 
-        <div class="row align-items-start">
-            <fieldset>
-                <legend>Medical Treatment Description</legend>
-                <div class="tblDiv" style="margin-top:1px;">
-<textarea style="width:100%"></textarea>
-                </div>
-
-            </fieldset>
-
-        </div>
-
-        <div class="row align-items-start">
-            <fieldset>
-                <legend>Person Noticed</legend>
-                <div class="tblDiv" style="margin-top:1px;">
-                    <div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="tblBody">
-                                    <table class="tablenoborder" id="tblIncidents">
-                                        <thead>
-                                            <tr>
-                                                <td>Employee Number</td>
-                                                <td>Name</td>
-                                                <td>Title</td>
-                                                <td>Phone</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div class="row align-items-start rowmargin">
+                            <div class="row">
+                                <div class="col-xl-2">Was this incident/accident reported to the FRA:</div>
+                                <div class="col-xl-4">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-2">Contributing cause:</div>
+                                <div class="col-xl-4"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-2">H&I N/Y/G/I/C (No,Yes,Gulty,Innocent,Canceled):</div>
+                                <div class="col-xl-4">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-2">Have you completed review:</div>
+                                <div class="col-xl-4">
+                                    <select class="form-control">
+                                        <option>[--SELECT--]</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-                </div>
-                <div class="row" style="padding-top:10px;">
-                    <div class="col-xl-9"></div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-primary">Add</button>
-                    </div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-info">Edit</button>
-                    </div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-danger">Delete</button>
-                    </div>
-                </div>
-            </fieldset>
-
-        </div>
-
-        <div class="row align-items-start">
-            <fieldset>
-                <legend>Person Information</legend>
-                <div class="tblDiv" style="margin-top:1px;">
-                    <div>
-                        <div class="row" style="padding:5px;">
-                            <div class="col-xl-1">
-                                Name:
-                            </div>
-                            <div class="col-xl-3">
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-xl-1">
-                                Date Prepared:
-                            </div>
-                            <div class="col-xl-3">
-                                <input type="date" class="form-control" />
-                            </div>
-                            <div class="col-xl-1">
-                                Date Signed:
-                            </div>
-                            <div class="col-xl-3">
-                                <input type="date" class="form-control" />
-                            </div>
+                        <div class="row align-items-start">
+                            <fieldset>
+                                <legend>Prepared and reviewer info</legend>
+                                <div class="row">
+                                    <div class="col-xl-2">Name:</div>
+                                    <div class="col-xl-2">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-xl-2">Date Prepared:</div>
+                                    <div class="col-xl-2"><input type="date" class="form-control"></div>
+                                    <div class="col-xl-2">Date Submitted:</div>
+                                    <div class="col-xl-2"><input type="date" class="form-control"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-2">Reviewed by:</div>
+                                    <div class="col-xl-2">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-xl-2">User Id:</div>
+                                    <div class="col-xl-2"><input type="text" class="form-control"></div>
+                                    <div class="col-xl-2">Reviewed Date:</div>
+                                    <div class="col-xl-2"><input type="date" class="form-control"></div>
+                                </div>
+                            </fieldset>
                         </div>
-
-                    </div>
-
-                </div>
-                <div class="row" style="padding-top:10px;">
-                    <div class="col-xl-9"></div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-primary">Add</button>
-                    </div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-info">Edit</button>
-                    </div>
-                    <div class="col-xl-1">
-                        <button class="btn btn-danger">Delete</button>
                     </div>
                 </div>
-            </fieldset>
+            </div>
+
 
         </div>
     </div>
-
-
-</div>
-<div class="row" style="padding-top:10px;">
-    <div class="col-xl-1">
-        <button class="btn btn-primary">FRA..</button>
-    </div>
-    <div class="col-xl-9"></div>
-    <div class="col-xl-1">
-        <button class="btn btn-primary">Save</button>
-    </div>
-    <div class="col-xl-1">
-        <button class="btn btn-danger">Cancel</button>
+    <div class="row" style="padding-top:10px;">
+        <div class="col-xl-1">
+            <button class="btn btn-primary">FRA..</button>
+        </div>
+        <div class="col-xl-9"></div>
+        <div class="col-xl-1">
+            <button class="btn btn-primary">Save</button>
+        </div>
+        <div class="col-xl-1">
+            <button class="btn btn-danger">Cancel</button>
+        </div>
     </div>
 </div>
 @code {
