@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-BJ1y0JDkC8grDKYTQfi5b6p3QVzCMFBBV5VpnLWSmwY=",
+      "hash": "sha256-E4FRH+QTBW3wTW\/q0ItnpXsJ1sA1Iirm6Pudxo3h7CE=",
       "url": "css\/app.css"
     },
     {
@@ -885,11 +885,11 @@
       "url": "_framework\/DemoProj.Shared.pdb"
     },
     {
-      "hash": "sha256-0+rIojGu59wPGJQK1beygJ4mduAsxnKtc2OJ2tSjf44=",
+      "hash": "sha256-5xXuD2EzYezob2nEUGhzsLfsbzsRRyYFp57rHgenp08=",
       "url": "_framework\/DemoProj.Client.dll"
     },
     {
-      "hash": "sha256-awBPMY3dkqGPkXb9Uc9Gm0bYWMYc2bNgwMuaWRKJE5w=",
+      "hash": "sha256-iLv3CwXwWzYOtLqTl87+FBeaqyXCid6mYvQmlw+LSy8=",
       "url": "_framework\/DemoProj.Client.pdb"
     },
     {
@@ -897,9 +897,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-tllP8Zc86nOPjh1esQXuGIjdwhkF1uVkEEfhqrRb4Gg=",
+      "hash": "sha256-wzjlBogAkJRMzNtkrviEco7QgO7zzkTPAEUlawO3FVw=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "0UPylQbB"
+  "version": "3mq0inF3"
 };
